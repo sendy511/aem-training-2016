@@ -18,7 +18,6 @@
     <p data-sly-test="${properties.text}">Text property: ${properties.text}</p>
     <div class="panel panel-default"
         data-sly-use.linkButton="com.thoughtworks.www.samples.models.LinkButtonModel">
-        <button>${linkButton.buttonText}</button>
-        <button>${linkButton.buttonColor}</button>
+        <button style="background-color: ${linkButton.buttonColor @ context='unsafe'}">${linkButton.buttonText}</button>
     </div>
 </div>
